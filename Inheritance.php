@@ -31,9 +31,6 @@ class CdProduct {
     }
 }
 
-
-}
-}
 class BookProduct {
     public $numPages;
     public $title;
