@@ -14,21 +14,22 @@ require_once 'ShopProductWriter.php';
 
 
 //Object for Constructor
-$product1 = new ShopProduct( "My Antonia", "Willa", "Cather", 5.99 );
-print "author: {$product1->getProducer()}<br>";
+//$product1 = new ShopProduct( "My Antonia", "Willa", "Cather", 5.99 );
+//print "author: {$product1->getProducer()}<br>";
 
 
 //Object for AddressManager Primitive Types Matter: An Example
 
 
 $settings = simplexml_load_file("settings.xml");
+//var_dump($settings);
 $manager = new AddressManager();
 $manager->outputAddresses( (string)$settings->resolvedomains );
-echo "<br>";
-
-
-//Taking the Hint: Object Types
-
-$product1 = new ShopProduct( "My Antonia", "Willa", "Cather", 5.99 );
-$writer = new ShopProductWriter();
-$writer->write( $product1 );
+//echo "<br>";
+//
+//
+////Taking the Hint: Object Types
+//
+//$product1 = new ShopProduct( "My Antonia", "Willa", "Cather", 5.99 );
+//$writer = new ShopProductWriter();
+//$writer->write( $product1 );
