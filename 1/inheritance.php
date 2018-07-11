@@ -60,4 +60,6 @@ class Circle extends Shape
 //echo (new Square())->getArea();
 //echo (new Triangle())->getArea();
 //echo (new Square('black'))->getColor();
-echo (new Circle)->getArea();
+echo (new Circle())->getArea() .'<br>';
+echo (new Circle('green'))->getColor();
+
