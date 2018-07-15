@@ -1,0 +1,14 @@
+{
+  "autoload":{
+      "files":[
+          "Core/Function.php"
+      ],
+      "psr-4":{
+//          "MainDir\\" : "1/src",
+          "App\\":"App/",
+          "Core\\":"Core/"
+      }
+
+  }
+}
+
