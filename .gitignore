@@ -2,6 +2,11 @@
 *.iml
 out
 gen
+<<<<<<< HEAD
 .DS_Store
 
 
+=======
+DS_Store
+.DS_Store
+>>>>>>> d79bab39d71602996b576768785549c4b459a3be
