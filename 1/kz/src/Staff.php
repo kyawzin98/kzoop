@@ -1,19 +1,22 @@
 <?php
 namespace MainDir;
 use MainDir\Users\Person;
-class Staff{
-    protected $members=[];
+class Staff
+{
+    protected $members = [];
 
-    public function __construct($members=[])
+    public function __construct($members = [])
     {
-        $this->members=$members;
+        $this->members = $members;
     }
 
-    public function add(Person $person){
-        $this->members[]=$person;
+    public function add(Person $person)
+    {
+        $this->members[] = $person;
     }
 
-    public function members(){
+    public function members()
+    {
         return $this->members;
     }
 }

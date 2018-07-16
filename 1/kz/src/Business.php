@@ -1,19 +1,23 @@
 <?php
 namespace MainDir;
 use MainDir\Users\Person;
-class  Business{
+class  Business
+{
 
     protected $staff;
+
     public function __construct(Staff $staff)
     {
-        $this->staff=$staff;
+        $this->staff = $staff;
     }
 
-    public function hire(Person $person){
+    public function hire(Person $person)
+    {
         $this->staff->add($person);
     }
 
-    public function getStaffMembers(){
+    public function getStaffMembers()
+    {
         return $this->staff->members();
     }
 }
